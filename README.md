@@ -20,6 +20,7 @@ In my free time, I like hanging out with my loved ones (especially my dogs :dog:
 
 ## :seedling: Plants
 - [Catasetum-Type Orchids](https://docs.google.com/presentation/d/e/2PACX-1vTs9lznFnMZoibRB1B3RRkCm1ugosPnV8tVBlVImOXoa0gQfVBstemobLRgCIG7290Mz9iZmjMhScJ2/pub?start=false&loop=true&delayms=5000)
+- [Plant Pictures](https://photos.app.goo.gl/ws4CejPhtuAnFcFa6)
 
 ## :hammer_and_wrench: Experience
 
