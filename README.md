@@ -32,3 +32,10 @@ In my free time, I like hanging out with my loved ones (especially my dogs :dog:
 
 - Bachelor of Science, Computer Science - University of Texas at Austin (December, 2013)
 - Bachelor of Culinary Arts Management - Culinary Institute of America (December, 2005)
+
+## :link: Links
+
+- [LinkedIn](https://www.linkedin.com/in/danfforbes/)
+- [Twitter](https://twitter.com/danforbesdev)
+- [Reddit](https://www.reddit.com/user/danforbesdev)
+- [YouTube](https://www.youtube.com/channel/UC-Z9fvZ1KNzaantH2rf3oxA)
