@@ -13,6 +13,7 @@ In my free time, I like hanging out with my loved ones (especially my dogs :dog:
 - [Chainlink + Remix Workshop](https://docs.google.com/document/d/e/2PACX-1vTfuGrmqJO_il0PzZY5iU5_HtmiEExu5t7XHzrj6rRVKZnOdvy3fUJzlIlTgd-FMrUl2A-9T9ndP7Nj/pub)
 - [Chainlink External Adapter Workshop](https://docs.google.com/document/d/e/2PACX-1vSlbBgXHatt1XOPthCHdJG2MlVP0Te9254kxLiCAE7R3yggzlwuVbPH5U8TSc1AjSCqy11ovhPPcQXL/pub)
 - [Chainlink Job Specification Workshop](https://docs.google.com/document/d/e/2PACX-1vSjDxpyN7UMIjXeLC-kJy1-NNX5csI5bxq7vR8uAzt-9iSCd5AXsK_gWWXI2i_eKsZeADEMO9xZnMRP/pub)
+- [Chainlink + Honeycomb Workshop](https://docs.google.com/document/d/e/2PACX-1vQzTVNGbLLrEVLMzf0pXbsvG_AFtFSDMmBfzngZtdNVsqr1mmEBcJN4-IF7qgrlZF4NjXAaZOV8bYiN/pub)
 
 ## :memo: Writings
 
