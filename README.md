@@ -28,7 +28,7 @@ In my free time, I like hanging out with my loved ones (especially my dogs :dog:
 
 ## :hammer_and_wrench: Experience
 
-- Developer Advocate, [Chainlink](https://chain.link/) (September, 2019 to now)
+- Developer Advocate, [Chainlink](https://chain.link/) (September, 2019 to January, 2020)
 - Full-Stack Software Engineer, [Teradata Corporation](https://www.teradata.com/) (December, 2016 to August, 2019)
 - Software Engineer, [Factset Research Systems, Inc.](https://www.factset.com/) (January, 2014 to November, 2016)
 
