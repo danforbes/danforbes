@@ -20,6 +20,7 @@ In my free time, I like hanging out with my loved ones (especially my dogs :dog:
 ## :memo: Writings
 
 - [Ethereum Smart Contract Development Reference](/writings/eth-dev.md)
+- [The Unspent Transaction Output (UTXO) Model](/writings/utxo.md)
 - [Idiomatic Git](https://docs.google.com/document/u/1/d/e/2PACX-1vTyWJ2WZ4EAum_Cgf9athuJFkoaCCWue_56Ep9liKBzHGxYLPI1arTdDyxr1rk6iix7d6w8504x83Kg/pub)
 
 ## :seedling: Plants
