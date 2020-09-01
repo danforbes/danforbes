@@ -55,5 +55,5 @@ guaranteed to succeed or fail as a unit.
 Substrate v2.0.0-rc4 included enhancements to improve the experience around
 [the Contracts pallet](https://substrate.dev/rustdocs/v2.0.0-rc4/pallet_contracts/index.html). Check them out by
 completing [the awesome `ink!` Smart Contracts Tutorial](https://substrate.dev/substrate-contracts-workshop/#/). You can
-also follow the [Add a Pallet Tutorial](https://substrate.dev/docs/en/tutorials/add-a-pallet-to-your-runtime/) to learn
-how to add the Contracts pallet to a runtime.
+also follow the [Add the Contracts Pallet Tutorial](https://substrate.dev/docs/en/tutorials/add-contracts-pallet/) to
+learn how to add the Contracts pallet to a runtime.
