@@ -200,6 +200,21 @@ experiences:
 - [Polkaswap](https://polkaswap.io/): automated market maker
 - [Subsocial](https://subsocial.network/): decentralized social network
 
+### Build with Smart Contracts
+
+Follow the [Substrate Contracts Workshop](https://substrate.dev/substrate-contracts-workshop/#/) for
+an end-to-end smart contract demonstration that uses the FRAME
+[Contracts pallet](https://github.com/paritytech/substrate/tree/master/frame/contracts) and the
+[ink! smart contract language](https://github.com/paritytech/ink). The Contracts Workshop uses the
+[Canvas Node](https://github.com/paritytech/canvas-node) and
+[Canvas UI](https://github.com/paritytech/canvas-ui), which can be used as starting points to build
+a custom Substrate-based blockchain with smart contract capabilities. Follow the
+[Add the Contracts Pallet tutorial](https://substrate.dev/docs/en/tutorials/add-contracts-pallet/)
+to learn how to enhance the Node Template by adding smart contract capabilities.
+
+Check out [Moonbeam's docs](https://docs.moonbeam.network/) for best-in-class support of EVM smart
+contracts on Substrate-based chains.
+
 ### Maintain the Polkadot Network
 
 Decentralized networks require a vibrant
