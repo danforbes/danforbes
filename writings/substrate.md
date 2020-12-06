@@ -18,6 +18,9 @@ promise of a decentralized "world computer". Parity was initially known for the 
 a range decentralized protocols, such as the
 [Parity Zcash client](https://github.com/paritytech/parity-zcash).
 
+Learn more: [Living Without Trust, Dr. Jutta Steiner](https://www.youtube.com/watch?v=ryTVNsABGJg)
+(YouTube)
+
 ## Web3 Foundation
 
 The Web3 Foundation is a research organization that was also founded by Dr. Gavin Wood. Its mission
@@ -25,6 +28,10 @@ is to nurture cutting-edge applications of decentralized protocols in order to c
 Internet where users control their own identity and data. The Web3 Foundation's flagship project is
 [Polkadot](https://research.web3.foundation/en/latest/polkadot/overview.html) - a next-generation
 protocol for trustless, scalable, decentralized networking.
+
+Learn more:
+[Commoditizing Trust and Disrupting the System, Dr. Gavin Wood](https://www.youtube.com/watch?v=UIBR99gOLOQ)
+(YouTube)
 
 ### Why Blockchain?
 
@@ -37,6 +44,9 @@ interaction can be built. Blockchain technology is an enablement layer for the W
   protocols to provide critical infrastructure like commerce and healthcare
 - Web 3.0: a trustless, egalitarian Internet that uses cryptography to allow individuals to maintain
   custody of their identity and personal data
+
+Learn more: [What Exactly is Web3, Juan Benet](https://www.youtube.com/watch?v=l44z35vabvA)
+(YouTube)
 
 ## Polkadot
 
@@ -64,6 +74,9 @@ It is worth reiterating and enumerating these characteristics of Polkadot-like n
 - **Scalability** through separation of concerns
 - **Interoperability** through trustless message passing
 - **Flexibility** through separation of concerns & upgradeability
+
+Learn more: [How Polkadot Works, Robert Habermeier](https://www.youtube.com/watch?v=WXq8AnGbPkE)
+(YouTube)
 
 ### A Note About Smart Contracts
 
@@ -95,6 +108,8 @@ needs:
   runtime and its history
 - Storage: represents the current state of the runtime and maintains an archive of its history
 - Remote Procedure Call (RPC) Server: allows users to interact with the blockchain
+
+Learn more: [Substrate, Robert Habermeier](https://www.youtube.com/watch?v=q1zLHO7Lkuk) (YouTube)
 
 ### FRAME
 
