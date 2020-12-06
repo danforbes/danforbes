@@ -8,20 +8,35 @@ researchers at the [Web3 Foundation](https://web3.foundation/). The purpose of t
 provide a clear entry point to make it easy to understand the admittedly complex web of concepts and
 technologies that informs the Substrate and Polkadot ecosystems.
 
-## Parity Technologies
+## Overview
+* [Research and Development](#research-and-development)
+  * [Parity Technologies](#parity-technologies)
+  * [Web3 Foundation](#web3-foundation)
+* [Polkadot: a multi-chain application environment](#polkadot-a-multichain-application-environment)
+  * [Why blockchain?](#why-blockchain)
+  * [Polkadot](#polkadot)
+  * [Substrate](#substrate)
+    * [FRAME](#frame)
+  * [Smart Contracts](#smart-contracts)
+* [Other Terms](#other-terms)
+* [Getting Started](#getting-started)
+  * [Build a Chain](#build-a-chain)
+  * [Build on an Existing Chain](#build-on-an-existing-chain)
+  * [Build with Smart Contracts](#build-with-smart-contracts)
+  * [Maintain the Polkadot Network](#maintain-the-polkadot-network)
+  
+
+## Research and Development 
+### Parity Technologies
 
 Parity Technologies was founded in 2016 by [Dr. Gavin Wood](https://www.parity.io/gavin-wood/) and
 [Dr. Jutta Steiner](https://www.parity.io/jutta-steiner/) two years after they helped found
 [Ethereum](https://ethereum.org/), the ground-breaking smart contract platform that actualized the
 promise of a decentralized "world computer". Parity was initially known for the Rust-based
 [Parity Ethereum client](https://www.parity.io/ethereum/), but went on to develop infrastructure for
-a range decentralized protocols, such as the
-[Parity Zcash client](https://github.com/paritytech/parity-zcash).
+a range decentralized protocols, such as the [Parity Zcash client](https://github.com/paritytech/parity-zcash).
 
-Learn more: [Living Without Trust, Dr. Jutta Steiner](https://www.youtube.com/watch?v=ryTVNsABGJg)
-(YouTube)
-
-## Web3 Foundation
+### Web3 Foundation
 
 The Web3 Foundation is a research organization that was also founded by Dr. Gavin Wood. Its mission
 is to nurture cutting-edge applications of decentralized protocols in order to create a more fair
@@ -29,44 +44,40 @@ Internet where users control their own identity and data. The Web3 Foundation's 
 [Polkadot](https://research.web3.foundation/en/latest/polkadot/overview.html) - a next-generation
 protocol for trustless, scalable, decentralized networking.
 
-Learn more:
-[Commoditizing Trust and Disrupting the System, Dr. Gavin Wood](https://www.youtube.com/watch?v=UIBR99gOLOQ)
-(YouTube)
-
-### Why Blockchain?
-
+## Polkadot: a multichain application environment 
+### Why blockchain?
 A blockchain is a means to an end; it is a platform upon which novel mechanisms for trustless human
-interaction can be built. Blockchain technology is an enablement layer for the Web 3.0 vision.
+interaction can be built. Blockchain technology is an enablement layer for the Web 3.0 vision. A brief overview of the way the web has been evolving helps understand why this layer is an important part of the Internet's future:
 
-- Web 1.0: the original incarnation of the Internet that existed to allow researchers to freely
+- **Web 1.0**: the original incarnation of the Internet that existed to allow researchers to freely
   communicate and share their research
-- Web 2.0: the modern Internet that relies heavily on broken trust models and layers of legacy
+- **Web 2.0**: the modern Internet that relies heavily on broken trust models and layers of legacy
   protocols to provide critical infrastructure like commerce and healthcare
-- Web 3.0: a trustless, egalitarian Internet that uses cryptography to allow individuals to maintain
+- **Web 3.0**: a trustless, egalitarian Internet that uses cryptography to allow individuals to maintain
   custody of their identity and personal data
 
-Learn more: [What Exactly is Web3, Juan Benet](https://www.youtube.com/watch?v=l44z35vabvA)
-(YouTube)
-
-## Polkadot
-
+### Polkadot
 The [Polkadot Paper](https://polkadot.network/PolkaDotPaper.pdf) (a playful reference to the term
-"whitepaper") describes a multi-blockchain network with a central "relay chain" at its core. The
+"whitepaper") describes a multi-blockchain network with a central "relay chain" at its core. In other words, it's a network protocol that opens doors for other application-specific blockchains (also known as parachains) to coordinate and communicate with eachother. The
 purpose of a relay chain is to provide shared infrastructure and security for the
-application-specific "parachains" that it supports. This design support two important capabilities:
-_scalability_ & _interoperability_. Scalability is provided by decoupling the concerns of
-infrastructure and application logic - by focusing solely on infrastructure, the relay chain is able
-to support a relatively large number of parachains that are each free to focus on specialized
+application-specific "parachains" that it supports. 
+
+This design supports two important capabilities:
+
+**Scalability**. This is provided by decoupling the concerns of
+infrastructure and application logic. By focusing solely on infrastructure, the relay chain is able
+to support a relatively large number of "parachains" that are each free to focus on specialized
 capabilities. Furthermore, the relay chain provides trustless message-passing capabilities among all
 the parachains it supports, which means that the blockchains in a Polkadot-like network are
-interoperable by default. Another key capability supported by the design of the Polkadot protocol is
-_flexibility_. Although the Polkadot protocol specifies that the relay chain implement a
+interoperable by default. 
+
+**Flexibility**. Although the Polkadot protocol specifies the implementation of a
 [nominated proof-of-stake](https://research.web3.foundation/en/latest/polkadot/NPoS/index.html)
 consensus mechanism, parachains are free to implement their own consensus mechanisms. This is why
 Polkadot is referred to as a "heterogenous" multi-blockchain network, because there is no
-requirement for homogeneity with respect to consensus mechanisms. Last, but by no means least,
-Polkadot specifies a mechanism by which blockchains may be _upgraded_ over time, which is a
-groundbreaking capability that allows network maintainers to improve their blockchains to serve the
+requirement for homogeneity with respect to consensus mechanisms. 
+
+**Upgradability**. Polkadot specifies a mechanism by which blockchains may be _upgraded_ over time. This capability allows network maintainers to improve their blockchains over time and meet the evolving
 needs of the network.
 
 It is worth reiterating and enumerating these characteristics of Polkadot-like networks:
@@ -75,19 +86,7 @@ It is worth reiterating and enumerating these characteristics of Polkadot-like n
 - **Interoperability** through trustless message passing
 - **Flexibility** through separation of concerns & upgradeability
 
-Learn more: [How Polkadot Works, Robert Habermeier](https://www.youtube.com/watch?v=WXq8AnGbPkE)
-(YouTube)
-
-### A Note About Smart Contracts
-
-Many people who have explored blockchain technologies are familiar with the concept of
-[smart contacts](https://en.wikipedia.org/wiki/Smart_contract) and may even consider them to be a
-necessary component of a blockchain ecosystem. This is not the case in a Polkadot-like network.
-Although the Polkadot protocol supports smart contract platforms, it is only one mechanism by which
-blockchain developers and users can interact with blockchains in a Polkadot-like network. Keep
-reading to learn how smart contracts fit in to the Polkadot ecosystem.
-
-## Substrate
+### Substrate
 
 Substrate was created in order to accelerate the development of multiple Polkadot-like networks.
 Substrate is being used by Parity Technologies to implement the relay chains of Polkadot-like
@@ -109,9 +108,7 @@ needs:
 - Storage: represents the current state of the runtime and maintains an archive of its history
 - Remote Procedure Call (RPC) Server: allows users to interact with the blockchain
 
-Learn more: [Substrate, Robert Habermeier](https://www.youtube.com/watch?v=q1zLHO7Lkuk) (YouTube)
-
-### FRAME
+#### FRAME
 
 FRAME is Substrate's standard library for runtime development. It is not the only way to build
 Substrate runtimes, but it is the method that Parity supports and that is used to build the runtimes
@@ -130,7 +127,14 @@ like Polkadot and Kusama. The standard FRAME pallets cover a range of capabiliti
   network upgrades
 - Smart contracts to allow users to securely deploy custom logic to the runtime
 
-### Back to Smart Contacts
+### Smart Contracts
+
+Many people who have explored blockchain technologies are familiar with the concept of
+[smart contacts](https://en.wikipedia.org/wiki/Smart_contract) and may even consider them to be a
+necessary component of a blockchain ecosystem. This is not the case in a Polkadot-like network.
+Although the Polkadot protocol supports smart contract platforms, it is only one mechanism by which
+blockchain developers and users can interact with blockchains in a Polkadot-like network. Keep
+reading to learn how smart contracts fit in to the Polkadot ecosystem.
 
 With Substrate & FRAME, it's easy to build a wide range of capabilities directly into the runtime of
 an application-specific blockchain. With Polkadot, it's easy to deploy a custom-built blockchain
