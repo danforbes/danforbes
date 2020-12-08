@@ -3,7 +3,7 @@
 The purpose of this guide is to provide a clear set of steps that any developer can take to get
 started building blockchains with [Substrate](https://www.substrate.io/), as well as some suggested
 paths for next-steps for intermediate Substrate developers. This resource kit is meant to supplement
-the [Polkadot & Substrate: Zero to Hero](substrate) guide.
+the [Polkadot & Substrate: Zero to Hero](substrate.md) guide.
 
 ## Getting Started
 
@@ -52,8 +52,7 @@ that all Substrate developers should be familiar with:
 - Get comfortable browsing Substrate's source code, especially the
   [core FRAME pallets](https://github.com/paritytech/substrate/tree/v2.0.0/frame) and
   [example node](https://github.com/paritytech/substrate/tree/v2.0.0/bin/node).
-- Get to know Polkadot{JS} by checking out its [docs](https://polkadot.js.org/docs/). The Front-End
-  Template is built with tools like the Polkadot{JS} API and crypto utilities. Explore the
+- Get to know Polkadot{JS} by checking out its [docs](https://polkadot.js.org/docs/). Explore the
   [Polkadot{JS} Apps UI](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama-rpc.polkadot.io#/explorer),
   which is the _de facto_ front-end for Substrate-based chains.
 - Learn about [Subkey](https://substrate.dev/docs/en/knowledgebase/integrate/subkey), the official

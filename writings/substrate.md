@@ -22,10 +22,10 @@ technologies that informs the Substrate and Polkadot ecosystems.
 
 Parity Technologies was founded in 2016 by [Dr. Gavin Wood](https://www.parity.io/gavin-wood/) and
 [Dr. Jutta Steiner](https://www.parity.io/jutta-steiner/) two years after they helped found
-[Ethereum](https://ethereum.org/), the ground-breaking smart contract platform that actualized the
-promise of a decentralized "world computer". Parity was initially known for the Rust-based
-[Parity Ethereum client](https://www.parity.io/ethereum/), but went on to develop infrastructure for
-a range of decentralized protocols, such as the
+[Ethereum](https://ethereum.org/), the ground-breaking [smart contract](#smart-contracts) platform
+that actualized the promise of a decentralized "world computer". Parity was initially known for the
+Rust-based [Parity Ethereum client](https://www.parity.io/ethereum/), but went on to develop
+infrastructure for a range of decentralized protocols, such as the
 [Parity Zcash client](https://github.com/paritytech/parity-zcash).
 
 Learn more: [Living Without Trust, Dr. Jutta Steiner](https://www.youtube.com/watch?v=ryTVNsABGJg)
@@ -45,9 +45,9 @@ Learn more:
 
 ### Why Blockchain?
 
-A blockchain is a means to an end; it is a platform upon which novel mechanisms for trustless human
+A blockchain is a means to an end - it is a platform upon which novel mechanisms for trustless human
 interaction can be built. Blockchain technology is an enablement layer for the Web 3.0 vision. What
-is the Web 3.0 vision? As the name implies, it help to think of it as the next generation in a
+is the Web 3.0 vision? As the name implies, it helps to think of it as the next generation in a
 progression of manifestations of the Internet.
 
 - **Web 1.0**: the original incarnation of the Internet that existed to allow researchers to freely
@@ -128,22 +128,31 @@ Learn more: [Substrate, Dr. Gavin Wood](https://www.youtube.com/watch?v=0IoUZdDi
 
 ### FRAME
 
-FRAME is Substrate's standard library for runtime development. It is not the only way to build
-Substrate runtimes, but it is the method that Parity supports and that is used to build the runtimes
-of relay chains like the Polkadot and Kusama Networks. FRAME defines a number of concepts and
-primitive types for runtime development, and provides a framework that allows developers to create a
-custom runtime by creating, composing, and configuring runtime modules, known as "pallets". It's
-easy to write a pallet to encapsulate custom business logic or reuse existing pallets, many of which
-are maintained by Parity and undergo third-party audits before being battle-tested on relay chains
-like Polkadot and Kusama. The standard FRAME pallets cover a range of capabilities:
+FRAME is Substrate's standard library for
+[runtime](https://substrate.dev/docs/en/knowledgebase/runtime/) development. It is not the only way
+to build Substrate runtimes, but it is the method that Parity supports and that is used to build the
+runtimes of relay chains like the Polkadot and Kusama Networks. FRAME defines a number of concepts
+and primitive types for runtime development, and provides a framework that allows developers to
+create a custom runtime by creating, composing, and configuring runtime modules, known as "pallets".
+It's easy to write a pallet to encapsulate custom business logic or reuse existing pallets, many of
+which are [maintained by Parity](https://github.com/paritytech/substrate/tree/master/frame) and
+undergo third-party audits before being battle-tested on relay chains like Polkadot and Kusama. The
+standard FRAME pallets cover a range of capabilities:
 
-- Utilities like on-chain randomness & timestamps, multi-signature accounts, and batch transactions
-- System administration like mechanisms for managing transaction payments and access to the root
-  user
-- Consensus mechanism that use on-chain data for improved security and decentralization
-- Governance capabilities that provide realistic, well-researched approaches to managing things like
-  network upgrades
-- Smart contracts to allow users to securely deploy custom logic to the runtime
+- Utilities like on-chain
+  [randomness](https://crates.parity.io/pallet_randomness_collective_flip/index.html) &
+  [timestamps](https://crates.parity.io/pallet_timestamp/index.html),
+  [multi-signature accounts](https://crates.parity.io/pallet_multisig/index.html), and
+  [batch transactions](https://crates.parity.io/pallet_utility/index.html)
+- System administration like mechanisms for managing
+  [transaction payments](https://crates.parity.io/pallet_transaction_payment/index.html) and access
+  to the [root user](https://crates.parity.io/pallet_sudo/index.html)
+- [Consensus mechanisms](https://crates.parity.io/pallet_babe/index.html) that use on-chain data for
+  improved security and decentralization
+- [Governance](https://crates.parity.io/pallet_collective/index.html) capabilities that provide
+  realistic, well-researched approaches to managing things like network upgrades
+- [Smart contracts](https://crates.parity.io/pallet_contracts/index.html) to allow users to securely
+  deploy custom logic to the runtime
 
 ## Smart Contracts
 
@@ -200,5 +209,5 @@ more.
 
 ## Getting Started
 
-Continue to the [Substrate Builder's Resource Kit](substrate-resource-kit) for a step-by-step guide
-to getting starting with Substrate!
+Continue to the [Substrate Builder's Resource Kit](substrate-resource-kit.md) for a step-by-step
+guide to getting starting with Substrate!
