@@ -1,4 +1,4 @@
-# Substrate: Zero to Hero
+# Polkadot & Substrate: Zero to Hero
 
 [Substrate](https://www.substrate.io/) is an [open-source](https://github.com/paritytech/substrate)
 [Rust](https://www.rust-lang.org/) framework for building blockchains that is curated by
@@ -8,6 +8,16 @@ researchers at the [Web3 Foundation](https://web3.foundation/). The purpose of t
 provide a clear entry point to make it easy to understand the admittedly complex web of concepts and
 technologies that informs the Substrate and Polkadot ecosystems.
 
+- [Parity Technologies](#parity-technologies)
+- [Web3 Foundation](#web3-foundation)
+  - [Why Blockchain?](#why-blockchain)
+- [Polkadot](#polkadot)
+- [Substrate](#substrate)
+  - [FRAME](#frame)
+- [Smart Contracts](#smart-contracts)
+- [Other Terms](#other-terms)
+- [Getting Started](#getting-started)
+
 ## Parity Technologies
 
 Parity Technologies was founded in 2016 by [Dr. Gavin Wood](https://www.parity.io/gavin-wood/) and
@@ -15,7 +25,7 @@ Parity Technologies was founded in 2016 by [Dr. Gavin Wood](https://www.parity.i
 [Ethereum](https://ethereum.org/), the ground-breaking smart contract platform that actualized the
 promise of a decentralized "world computer". Parity was initially known for the Rust-based
 [Parity Ethereum client](https://www.parity.io/ethereum/), but went on to develop infrastructure for
-a range decentralized protocols, such as the
+a range of decentralized protocols, such as the
 [Parity Zcash client](https://github.com/paritytech/parity-zcash).
 
 Learn more: [Living Without Trust, Dr. Jutta Steiner](https://www.youtube.com/watch?v=ryTVNsABGJg)
@@ -36,14 +46,21 @@ Learn more:
 ### Why Blockchain?
 
 A blockchain is a means to an end; it is a platform upon which novel mechanisms for trustless human
-interaction can be built. Blockchain technology is an enablement layer for the Web 3.0 vision.
+interaction can be built. Blockchain technology is an enablement layer for the Web 3.0 vision. What
+is the Web 3.0 vision? As the name implies, it help to think of it as the next generation in a
+progression of manifestations of the Internet.
 
-- Web 1.0: the original incarnation of the Internet that existed to allow researchers to freely
+- **Web 1.0**: the original incarnation of the Internet that existed to allow researchers to freely
   communicate and share their research
-- Web 2.0: the modern Internet that relies heavily on broken trust models and layers of legacy
+- **Web 2.0**: the modern Internet that relies heavily on broken trust models and layers of legacy
   protocols to provide critical infrastructure like commerce and healthcare
-- Web 3.0: a trustless, egalitarian Internet that uses cryptography to allow individuals to maintain
-  custody of their identity and personal data
+- **Web 3.0**: a trustless, egalitarian Internet that uses cryptography to allow individuals to
+  maintain custody of their identity and personal data
+
+Web 2.0 is built on permissioned databases that are managed by large companies. Blockchains rely on
+cryptography to secure information, so they are a completely permissionless way to manage user data.
+This means each user can manage their own data instead of placing their trust in large centralized
+entities.
 
 Learn more: [What Exactly is Web3, Juan Benet](https://www.youtube.com/watch?v=l44z35vabvA)
 (YouTube)
@@ -53,14 +70,21 @@ Learn more: [What Exactly is Web3, Juan Benet](https://www.youtube.com/watch?v=l
 The [Polkadot Paper](https://polkadot.network/PolkaDotPaper.pdf) (a playful reference to the term
 "whitepaper") describes a multi-blockchain network with a central "relay chain" at its core. The
 purpose of a relay chain is to provide shared infrastructure and security for the
-application-specific "parachains" that it supports. This design support two important capabilities:
-_scalability_ & _interoperability_. Scalability is provided by decoupling the concerns of
-infrastructure and application logic - by focusing solely on infrastructure, the relay chain is able
-to support a relatively large number of parachains that are each free to focus on specialized
-capabilities. Furthermore, the relay chain provides trustless message-passing capabilities among all
-the parachains it supports, which means that the blockchains in a Polkadot-like network are
-interoperable by default. Another key capability supported by the design of the Polkadot protocol is
-_flexibility_. Although the Polkadot protocol specifies that the relay chain implement a
+application-specific "parachains" that it supports. Think of Polkadot as providing services like
+CDN, DNS and certificate management, but in a way that relies on cryptography and game theory
+instead of trust in centralized authorities. This design support three important capabilities:
+_scalability_, _interoperability_, and _flexibility_.
+
+**Scalability** is provided by decoupling the concerns of infrastructure and application logic - by
+focusing solely on infrastructure, the relay chain is able to support a relatively large number of
+parachains that are each free to focus on specialized capabilities.
+
+The relay chain provides trustless message-passing capabilities among all the parachains it
+supports, which means that the blockchains in a Polkadot-like network are **interoperable** by
+default.
+
+Polkadot represents a significant advancement with respect to the **flexibility** of blockchain
+technologies. Although the Polkadot protocol specifies that the relay chain implement a
 [nominated proof-of-stake](https://research.web3.foundation/en/latest/polkadot/NPoS/index.html)
 consensus mechanism, parachains are free to implement their own consensus mechanisms. This is why
 Polkadot is referred to as a "heterogenous" multi-blockchain network, because there is no
@@ -77,15 +101,6 @@ It is worth reiterating and enumerating these characteristics of Polkadot-like n
 
 Learn more: [How Polkadot Works, Robert Habermeier](https://www.youtube.com/watch?v=WXq8AnGbPkE)
 (YouTube)
-
-### A Note About Smart Contracts
-
-Many people who have explored blockchain technologies are familiar with the concept of
-[smart contacts](https://en.wikipedia.org/wiki/Smart_contract) and may even consider them to be a
-necessary component of a blockchain ecosystem. This is not the case in a Polkadot-like network.
-Although the Polkadot protocol supports smart contract platforms, it is only one mechanism by which
-blockchain developers and users can interact with blockchains in a Polkadot-like network. Keep
-reading to learn how smart contracts fit in to the Polkadot ecosystem.
 
 ## Substrate
 
@@ -109,7 +124,7 @@ needs:
 - Storage: represents the current state of the runtime and maintains an archive of its history
 - Remote Procedure Call (RPC) Server: allows users to interact with the blockchain
 
-Learn more: [Substrate, Robert Habermeier](https://www.youtube.com/watch?v=q1zLHO7Lkuk) (YouTube)
+Learn more: [Substrate, Dr. Gavin Wood](https://www.youtube.com/watch?v=0IoUZdDi5Is) (YouTube)
 
 ### FRAME
 
@@ -130,7 +145,14 @@ like Polkadot and Kusama. The standard FRAME pallets cover a range of capabiliti
   network upgrades
 - Smart contracts to allow users to securely deploy custom logic to the runtime
 
-### Back to Smart Contacts
+## Smart Contracts
+
+Smart contracts encapsulate custom user logic that can be deployed to a blockchain. Many developers
+who have explored blockchain technologies are familiar with the concept of
+[smart contacts](https://en.wikipedia.org/wiki/Smart_contract) and may even consider them to be a
+necessary component of a blockchain ecosystem. This is not the case in a Polkadot-like network.
+Although the Polkadot protocol supports smart contract platforms, it is only one mechanism by which
+blockchain developers and users can interact with blockchains in a Polkadot-like network.
 
 With Substrate & FRAME, it's easy to build a wide range of capabilities directly into the runtime of
 an application-specific blockchain. With Polkadot, it's easy to deploy a custom-built blockchain
@@ -178,64 +200,5 @@ more.
 
 ## Getting Started
 
-There are a number of ways to participate in the Polkadot community.
-
-### Build a Chain
-
-Go to the [Substrate Developer Hub](https://substrate.dev/) to learn how to write a custom
-blockchain with Substrate and FRAME. The
-[first tutorial](https://substrate.dev/docs/en/tutorials/create-your-first-substrate-chain/) is a
-guided walk through of getting started with the official Substrate Developer Hub
-[Node Template](https://github.com/substrate-developer-hub/substrate-node-template) and
-[Front-End Template](https://github.com/substrate-developer-hub/substrate-front-end-template). While
-the Node Template compiles, read the introduction to the Substrate Developer Hub
-[Knowledge Base](https://substrate.dev/docs/) and get acquainted with its structure and content.
-Complete the next three [tutorials](https://substrate.dev/en/tutorials) to get hands-on experience
-with Substrate and FRAME. Check out the
-[Awesome Substrate](https://github.com/substrate-developer-hub/awesome-substrate) repository for
-lots more resources.
-
-### Build on an Existing Chain
-
-Explore the [teams building with Substrate](https://www.substrate.io/substrate-users/) and
-contribute to what they're building. Here are some chains that provide excellent developer
-experiences:
-
-- [Acala](https://acala.network/): decentralized finance
-- [Centrifuge](https://centrifuge.io/): on-chain assets represented as non-fungible tokens (NFTs)
-- [KILT](https://www.kilt.io/): self-sovereign identity
-- [Kulupu](https://kulupu.network/): smart contract platform with on-chain governance
-- [Kusama](https://kusama.network/): experimental network that
-  [sponsors](https://app.subsocial.network/@RelayChainGovernance/how-to-submit-a-bounty-proposal-on-kusama-and-polkadot-316)
-  innovative applications of blockchain technologies
-- [Moonbeam](https://moonbeam.network/): supports Ethereum applications with the next-generation
-  capabilities of Substrate and Polkadot
-- [Nodle](https://nodle.io/): decentralized Internet of Things
-- [OriginTrail](https://origintrail.io/): supply chain management
-- [Polkaswap](https://polkaswap.io/): automated market maker
-- [Subsocial](https://subsocial.network/): decentralized social network
-
-### Build with Smart Contracts
-
-Follow the [Substrate Contracts Workshop](https://substrate.dev/substrate-contracts-workshop/#/) for
-an end-to-end smart contract demonstration that uses the FRAME
-[Contracts pallet](https://github.com/paritytech/substrate/tree/master/frame/contracts) and the
-[ink! smart contract language](https://github.com/paritytech/ink). The Contracts Workshop uses the
-[Canvas Node](https://github.com/paritytech/canvas-node) and
-[Canvas UI](https://github.com/paritytech/canvas-ui), which can be used as starting points to build
-a custom Substrate-based blockchain with smart contract capabilities. Follow the
-[Add the Contracts Pallet tutorial](https://substrate.dev/docs/en/tutorials/add-contracts-pallet/)
-to learn how to enhance the Node Template by adding smart contract capabilities.
-
-Check out [Moonbeam's docs](https://docs.moonbeam.network/) for best-in-class support of EVM smart
-contracts on Substrate-based chains.
-
-### Maintain the Polkadot Network
-
-Decentralized networks require a vibrant
-[community](https://wiki.polkadot.network/docs/en/community) of user-maintainers and the Polkadot
-Network is no different. Visit the information-packed
-[Polkadot Wiki](https://wiki.polkadot.network/en/) to learn how to support the Polkadot Network by
-[running a validator](https://wiki.polkadot.network/docs/en/maintain-guides-how-to-validate-polkadot),
-[participating in governance](https://wiki.polkadot.network/docs/en/maintain-guides-democracy), and
-more.
+Continue to the [Substrate Builder's Resource Kit](substrate-resource-kit) for a step-by-step guide
+to getting starting with Substrate!
