@@ -147,7 +147,8 @@ projects. Generally speaking, exchanges can be classified in two categories:
   to the demand of tokens and the number of tokens available in the platform. If a token is very
   demanded and there is low liquidity, then Uniswap would offer a high interest rate for people
   depositing their tokens in that pool. A drawback of DEXs is that they cannot offer fiat on/off
-  ramps. It is only possible to transfer blockchain Tokens.
+  ramps. It is only possible to transfer blockchain Tokens. In fact, Logan Saether (@lsaether) has
+  created a [pallet to be used on Substrate that mimics the Uniswap Functionality](https://github.com/lsaether/pallet-swaps).
 
 - **Centralized Exchanges (CEX)**. This category allows for people to exchange directly with a
   platform and not P2P. A good example of this is [Binance](https://www.binance.com/). CEXs require
@@ -370,6 +371,8 @@ good example here is what [UseTech](https://usetech.com/blockchain/) through the
 > A Masters Degree diploma is unique: It has the students own courses and grades. How would a system
 > of NFT Diploma's work? What would people use it for?
 
+> An NFT Marketplace: a Uniswap like template with NFT's standrds. You can leverage [this pallet](https://github.com/lsaether/pallet-swaps).
+
 _[Back to Index](#index)_
 
 ## Bridges
@@ -490,9 +493,9 @@ _[Back to Index](#index)_
 
 ## Energy
 
-Teams are working on decentralising energy as well. What will happen when users can benefit of
-renewable energy for personal use and to sell it back for other users? Check out what
-[Mpowa](https://mpowa.io/) is doing, it's very interesting.
+Teams are working on decentralising energy, one can hardly imagin what would happen if users can benefit from renewable energy for private usage as well as selling energy back to the grid for other users consumption in a fully peer-to-peer manner? Check out what [Mpowa](https://mpowa.io/), [d3a](https://www.d3a.io/) and [energy web](https://www.energyweb.org/) is doing. Other concepts can also [include decentralizing investments](https://www.beautiful.ai/player/-MQaMo8Ogw69fZFJkAji) for renewable energy systems, with Tesla spear heading the decentralisation of energy production and consumption, having decentralized systems in the context of [Teslas Autobidder](https://www.tesla.com/support/autobidder) would just fit in naturally.
+
+_[Back to Index](#index)_
 
 _[Back to Index](#index)_
 
