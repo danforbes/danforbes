@@ -2,30 +2,35 @@
 
 > The following document was written by @SBalaguer.
 
-The Polkadot Ecosystem provides endless development possibilities. Depending on their business case,
-teams can decided to either build new blockchains leveraging on the Substrate Framework, or go the
-Smart Contract route, where Ink! and Solidity Smart Contracts are possible. No matter how you build
-it, Polkadot then connects it all, making interoperability a reality.
+The Polkadot Ecosystem provides endless development possibilities and ease of use by utilising a 
+generic blockchain framework called [Substrate](https://www.substrate.io/). Depending on one's business 
+case, teams can decide to either build a new Blockchain by leveraging the Substrate Framework, or go 
+the Smart Contracts route, where Ink! and Solidity Smart Contracts are supported out of the box. No 
+matter what and how you build it, Polkadot is capable of connecting it all, making interoperability a 
+reality.
 
 > Why are teams using Substrate?
 
-> There are several reasons why teams are choosing Substrate. But think of the following: If you are
-> going to buy a computer from scratch, which computer will you choose? I do believe that this
-> answer will depend on the actual usage of that device. If you are planning to work mostly with the
-> Office Package, then getting a Windows Machine is the best way to go. However, if it's for design,
-> then MacOs could probably be the best route.
+> There are endless reasons why teams are going to choose Substrate, but in general, think of the 
+> following: If you are going to build a computer from scratch, which computer will you choose? 
+> This answer might heavily depend on the actual usage of the device. If you are planning to work 
+> mostly with office packages, then getting a Windows machine might be the best option. However, 
+> if it's going to be used for design related work, then MacOs could probably be the best solution.
 
-> Same exact thing happens with blockchains. blockchains that process smart contracts are big,
-> distributed computers. But these networks have been designed to process information in a
-> particular way, and most commonly in a very broad way to fit as many uses cases as possible. That
-> being said, they are not optimal for a project's specific use case. Teams have seen this in the
-> past, so they decided to build their own blockchains. This is extremely hard.
+> The exact same thing could be observed in the blockchain space over the last years. Blockchains 
+> that process smart contracts are big, distributed computers, but these networks have been 
+> designed to process information in a very particular way, and most commonly in a very broad way 
+> to fit as many use cases as possible. That being said, they are not optimal for all of the project's 
+> specific use cases. Teams have seen this in the past, so they decided to build their own blockchains 
+> including their custom logics and restrictions over and over again and again.
 
-> Substrate was specifically designed to make it easy for teams to develop their own blockchains
-> with their own custom logic that fits their specific business case. All the security, message
-> passing and base layer part of a blockchain has already been developed in Substrate and it's
-> available to everyone (teams can change it if they need to), leaving the Runtime, the _brains_ of
-> the blockchain, ready like a white canvas for teams to paint their own picture.
+> Substrate in contrast, was specifically designed to make it easy for anybody to develop blockchains 
+> with custom logic that fits project specific business cases. All the security, message passing and 
+> base layer part of that is needed for a high throughput and high availability blockchain has been 
+> in-built natively into Substrate and it's freelee available to everyone, and even more, everybody 
+> is actually highly encouraged to contribute to further development of the highly modular [FRAME](https://substrate.dev/docs/en/knowledgebase/runtime/frame) 
+> based architecture. Leaving the [Runtime](https://substrate.dev/docs/en/knowledgebase/runtime/), the _brain_ of a blockchain, 
+> ready like a white canvas for teams to draw their own picture.
 
 Easiness and flexibility to develop together with true interoperability is why Polkadot has the
 second largest -and growing fast 🚀!- ecosystem in the blockchain space after Ethereum.
@@ -39,14 +44,14 @@ business goals guide your development.
 
 The blockchain space is re-thinking the way that people communicate between each other. When
 societies started, small groups of people interacted between each other and almost everyone knew
-everyone, making trust processes easy to track. As societies grew, people stopped knowing each
+everyone, making trust processes easy to track. As societies grew, people stopped knewing each
 other, but still needed to trust other people in order to interact. This is when big companies
 stepped in: they would be the trusting layers of societies. Bob didn't know Alice and Alice didn't
 know Bob, but they needed to conduct business. Both Bob and Alice knew and trusted the Bank in their
 town. Therefore, this Bank was the trusted layer between Bob and Alice. Charlie decided to fly
 abroad to visit some friends. When entering the new country, the Immigration Officer didn't know who
 Charlie was, but Charlie had a passport issued by his home country. This Immigration Officer trusts
-the government of Charlie's home country, and can therefore attest that Charlie is Charlie through
+the Government of Charlie's home country, and can therefore attest that Charlie is Charlie through
 Charlie's passport.
 
 Trust is everywhere people interact. But what if this centralised third parties don't act
@@ -58,7 +63,7 @@ Ethereum and Founder of Polkadot- says: `Less trust, more truth`.
 ### TL;DR
 
 The ecosystem is infinite. Think of what are people trusting on, and think of how to transform that
-intro a trustless blockchain based project. Then, think of how blockchain technology can enhance
+into a trustless blockchain based project. Then, think of how blockchain technology can enhance
 that. That is the end goal.
 
 ### Index
@@ -98,7 +103,7 @@ of it's tokens.
 
 Stablecoins can be categorized in three verticals:
 
-- **Token-Backed Stablecoins**. These stablecoins are backed by another token that has value.
+- **Token-Based Stablecoins**. These stablecoins are backed by another token that has value.
   Generally speaking, and in order to counter the price fluctuations of the underlying token, these
   projects tend to over-collateralized their supply. A good example of this is
   [Acala](https://acala.network/) with the aUSD stablecoin (1 aUSD = 1 USD). Acala is actually
@@ -112,7 +117,7 @@ Stablecoins can be categorized in three verticals:
   supply of the token. An example here is [AMPL](https://www.ampleforth.org/).
 
 > Can a Stablecoin backed by a group of other tokens be created? Changing the mix of coins would
-> change the value of the stablecoin, thus keeping it...stable.
+> change the value of the stablecoin, thus keeping it...stable. And 100% decentralised.
 
 _[Back to DeFi](#defi)_
 
@@ -147,7 +152,8 @@ projects. Generally speaking, exchanges can be classified in two categories:
   to the demand of tokens and the number of tokens available in the platform. If a token is very
   demanded and there is low liquidity, then Uniswap would offer a high interest rate for people
   depositing their tokens in that pool. A drawback of DEXs is that they cannot offer fiat on/off
-  ramps. It is only possible to transfer blockchain Tokens.
+  ramps. It is only possible to transfer blockchain Tokens. In fact, Logan Saether (@lsaether) has
+  created a [pallet to be used on Substrate that mimics the Uniswap Functionality](https://github.com/lsaether/pallet-swaps).
 
 - **Centralized Exchanges (CEX)**. This category allows for people to exchange directly with a
   platform and not P2P. A good example of this is [Binance](https://www.binance.com/). CEXs require
@@ -172,9 +178,9 @@ _[Back to Index](#index)_
 ### Borrowing and Lending
 
 These encompass all the projects that provide borrowing and lending capabilities with
-cryptocurrencies. These platforms usually pay an interest rate to those how provide liquidity, and
+cryptocurrencies. These platforms usually pay an interest rate to those who provide liquidity, and
 charge for those that require liquidity. Apart from this, when a user wants to ask for liquidity,
-the protocol with ask for some collateral which is retain if the loan is not repaid after the agreed
+the protocol will ask for some collateral which is retained if the loan is not repaid after the agreed
 term. An example of a Borrowing and Lending project is [Aave](https://aave.com/). When holding a
 token, a user can deposit it on Aave for lending. Aave will issue 1:1 aTokens (if you deposit BAT
 you would get aBAT) which value starts compounding from the moment you deposit. Holding those
@@ -256,12 +262,12 @@ _[Back to Index](#index)_
 
 ### Insurance
 
-blockchains and Decentralized Applications are still on a very early stage, and therefore error
-prone. This gave way to a new projects to be created that help user protect their assets. Insurance
+Blockchains and Decentralized Applications are still on a very early stage, and therefore error
+prone. This gave way to a new projects to be created that help users protect their assets. Insurance
 protocols therefore offer insurance in different blockchain spaces. A good example of this is
 [Tidal](https://tidal.finance/) that allows users to create pools of tokens to be insured.
 
-> Could their be a blockchain based insurance project that insures real-life assets?
+> Could there be a blockchain based insurance project that insures real-life assets?
 
 _[Back to DeFi](#defi)_
 
@@ -294,7 +300,7 @@ _[Back to Index](#index)_
 
 Privacy is one of the most controversial topics in the current Web2 Ecosystem. Big centralised
 organizations have a lot of information from users and profit from that. Think Facebook is free?
-Well, not really. They justs make it look like it is, but you gave something very valuable to them:
+Well, not really. They just make it look like it is, but you gave something very valuable to them:
 all your personal data. Still, it is sometimes important to understand who is interacting on the
 other side, because it could be the case that you want users to have accounts (web3 accounts, not
 web2 accounts). Privacy and Identity projects try to solve this problem of understanding who is who
@@ -313,13 +319,13 @@ _[Back to Index](#index)_
 
 File Storage solutions intend to allow users to save their files in a decentralized manner, without
 the need to trust big companies to save (and possibly tamper) the data. The underlying method of
-achieving this is by generating a incentivize network where users that have free disk space share
+achieving this is by generating an incentivize network where users that have free disk space share
 that with the ecosystem, and users that need to save data pay for that space. All in all, a file of
-a user is distributed encrypted in different nodes of a blockchain instead of being in a sever owned
+a user is distributed encrypted in different nodes of a blockchain instead of being in a server owned
 by a company.
 
-Examples of File Storage Blockhains are [IPFS](https://ipfs.io/), [FileCoin](https://filecoin.io/),
-[Equilibrium](https://equilibrium.co/) and DatDot.
+Examples of File Storage Blockchains are [IPFS](https://ipfs.io/), [FileCoin](https://filecoin.io/),
+[Equilibrium](https://equilibrium.co/) and [DatDot](https://datdot.org/).
 
 > How would a decentralized Dropbox look like? Could I share pictures of my Dog with my Mom in a
 > decentralized way?
@@ -357,8 +363,8 @@ people would argue that NFTs is not a category in itself, but rather a way of de
 all of the other categories. Given that there is a big bet on NFTs for 2021, I will be leaving this
 a a separate category for now.
 
-The first example of an NFT was [Cryptokitties](https://www.cryptokitties.co/), a game that was
-created for users to generate unique Kittens with unique features that could then mated with another
+The first example of an NFT was [Crypto Kitties](https://www.cryptokitties.co/), a game that was
+created for users to generate unique Kittens with unique features that could then be mated with another
 Kittens or traded for money. Cryptokitties generated the very first wave of expensive gas fees on
 Ethereum since it collapsed the network at its peak.
 
@@ -369,6 +375,8 @@ good example here is what [UseTech](https://usetech.com/blockchain/) through the
 
 > A Masters Degree diploma is unique: It has the students own courses and grades. How would a system
 > of NFT Diploma's work? What would people use it for?
+
+> An NFT Marketplace: a Uniswap like template with NFT's standrds. You can leverage [this pallet](https://github.com/lsaether/pallet-swaps).
 
 _[Back to Index](#index)_
 
@@ -468,7 +476,7 @@ _[Back to Index](#index)_
 
 ## Scaling
 
-Scaling solutions are one of the most look at things right now on the blockchain space. How to get
+Scaling solutions are one of the most studied things right now in the blockchain space. How to get
 the security and privacy of the blockchain, with the speed that we are used to right now with
 centralised servers.
 
@@ -490,16 +498,22 @@ _[Back to Index](#index)_
 
 ## Energy
 
-Teams are working on decentralising energy as well. What will happen when users can benefit of
-renewable energy for personal use and to sell it back for other users? Check out what
-[Mpowa](https://mpowa.io/) is doing, it's very interesting.
+Teams are working on decentralising energy, one can hardly imagin what would happen if users can benefit 
+from renewable energy for private usage as well as selling energy back to the grid for other users consumption 
+in a fully peer-to-peer manner? Check out what [Mpowa](https://mpowa.io/), [d3a](https://www.d3a.io/) and 
+[energy web](https://www.energyweb.org/) is doing. Other concepts can also [include decentralizing investments](https://www.beautiful.ai/player/-MQaMo8Ogw69fZFJkAji) 
+for renewable energy systems, with Tesla spearheading the decentralisation of energy production and consumption, 
+having decentralized systems in the context of [Tesla's Autobidder](https://www.tesla.com/support/autobidder) would 
+just fit in naturally.
+
+_[Back to Index](#index)_
 
 _[Back to Index](#index)_
 
 ## Enterprise
 
 Rather than a specific vertical, this category aims to give perspective on the fact that any
-solution can be though with enterprises or regular users in mind. Ideas in this scenario could be
+solution can be thought with enterprises or regular users in mind. Ideas in this scenario could be
 vast, given that enterprises usually take longer to adopt cutting edge technology. Apart from that,
 enterprises will probably want to keep things private, but with the ability to interact with other
 public blockchains,
@@ -512,6 +526,6 @@ _[Back to Index](#index)_
 
 There are teams like [Deeper Network](https://deeper.network/) that allow users to share their
 internet and profit from that, or teams like [Centrifuge](https://centrifuge.io/) that are working
-on digitalizing in a decentralised manner very specific company assets.
+on digitizing in a decentralised manner very specific company assets.
 
 _[Back to Index](#index)_
