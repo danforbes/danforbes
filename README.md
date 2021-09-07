@@ -41,12 +41,14 @@ In my free time, I like hanging out with my loved ones (especially my dogs :dog:
 
 ## :hammer_and_wrench: Experience
 
-- Developer Advocate, [Parity Technologies](https://www.parity.io/) (April, 2020 to present)
+- Technical Project Manager, [ChainSafe](https://chainsafe.io/) (September, 2021 to present)
+- Independent Consultant, [danforbes.dev](https://danforbes.dev/) (April, 2020 to August, 2021)
+- Developer Advocate, [Parity Technologies](https://www.parity.io/) (April, 2020 to February, 2021)
 - Developer Advocate, [Chainlink](https://chain.link/) (September, 2019 to January, 2020)
 - Full-Stack Software Engineer, [Teradata Corporation](https://www.teradata.com/) (December, 2016 to August, 2019)
 - Software Engineer, [Factset Research Systems, Inc.](https://www.factset.com/) (January, 2014 to November, 2016)
 
-## :man_student: Education
+## :student: Education
 
 - Bachelor of Science, Computer Science - University of Texas at Austin (December, 2013)
 - Bachelor of Culinary Arts Management - Culinary Institute of America (December, 2005)
